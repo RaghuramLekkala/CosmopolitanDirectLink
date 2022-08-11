@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuickReplyCollectionViewCell" id="gTV-IL-0wX" customClass="QuickReplyCollectionViewCell" customModule="IOSChatBot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkW-Eq-73A">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="56"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.47450980390000003" green="0.15686274510000001" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="actionButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="uXz-LS-2xf"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KkW-Eq-73A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4bI-cP-YM3"/>
+                <constraint firstItem="KkW-Eq-73A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Qu-FT-yw6"/>
+                <constraint firstAttribute="trailing" secondItem="KkW-Eq-73A" secondAttribute="trailing" id="9mE-Lo-2J0"/>
+                <constraint firstAttribute="bottom" secondItem="KkW-Eq-73A" secondAttribute="bottom" id="BWC-s0-dsI"/>
+            </constraints>
+            <size key="customSize" width="172" height="56"/>
+            <connections>
+                <outlet property="actionButton" destination="KkW-Eq-73A" id="wHB-iu-Otc"/>
+            </connections>
+            <point key="canvasLocation" x="-220.28985507246378" y="53.571428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

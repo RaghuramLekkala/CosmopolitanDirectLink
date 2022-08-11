@@ -1,0 +1,6 @@
+framework module Pods_CosmopolitanDirectLink {
+  umbrella header "Pods-CosmopolitanDirectLink-umbrella.h"
+
+  export *
+  module * { export * }
+}
